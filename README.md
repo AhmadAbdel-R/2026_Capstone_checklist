@@ -114,46 +114,42 @@ Project directories (top level):
 
 ## 5. System Mind Map
 ```mermaid
-%%{init: {"themeVariables": {"primaryTextColor":"#ffffff"}}}%%
 mindmap
   root((Capstone 2026))
-    Hardware["Hardware"]
-      Sender_PCB["Sender PCB"]
-        ESP32_S3["ESP32-S3 Mini"]
-        SAMD21["SAMD21"]
-        nRF["nRF"]
-        Power_Reg["Power Regulation"]
-      Receiver_PCB["Receiver PCB"]
-        ESP32_S3_r["ESP32-S3 Mini"]
-        SAMD21_r["SAMD21"]
-        nRF_r["nRF"]
-        Power_Reg_r["Power Regulation"]
-    Firmware["Firmware"]
-      ESP32_Sender["ESP32 Sender"]
-        HMI_Task["HMI Task"]
-        nRF_Task["nRF Task"]
-        Supervisor_Task["Supervisor Task"]
-      ESP32_Receiver["ESP32 Receiver"]
-        nRF_RX_Task["nRF RX Task"]
-        Parser["Parser"]
-      SAMD_Telemetry["SAMD Telemetry"]
-        CRC["CRC"]
-        Sequencing["Sequencing"]
-        Health_Metrics["Health Metrics"]
-    Drone["Drone"]
-      Frame["Frame"]
-      Motors["Motors"]
-      ESCs["ESCs"]
-      Power_Distribution["Power Distribution"]
-      PID_Tuning["PID Tuning"]
-    RL["RL"]
-      Dev_Board_Sensors["Dev Board Sensors"]
-      Simulation["Simulation"]
-      Training["Training"]
-      On_Hardware_Inference["On-Hardware Inference"]
-
-classDef white fill:#111,stroke:#444,color:#ffffff;
-class root,Hardware,Sender_PCB,ESP32_S3,SAMD21,nRF,Power_Reg,Receiver_PCB,ESP32_S3_r,SAMD21_r,nRF_r,Power_Reg_r,Firmware,ESP32_Sender,HMI_Task,nRF_Task,Supervisor_Task,ESP32_Receiver,nRF_RX_Task,Parser,SAMD_Telemetry,CRC,Sequencing,Health_Metrics,Drone,Frame,Motors,ESCs,Power_Distribution,PID_Tuning,RL,Dev_Board_Sensors,Simulation,Training,On_Hardware_Inference white
+    Hardware
+      Sender PCB
+        ESP32-S3 Mini
+        SAMD21
+        nRF
+        Power Regulation
+      Receiver PCB
+        ESP32-S3 Mini
+        SAMD21
+        nRF
+        Power Regulation
+    Firmware
+      ESP32 Sender
+        HMI Task
+        nRF Task
+        Supervisor Task
+      ESP32 Receiver
+        nRF RX Task
+        Parser
+      SAMD Telemetry
+        CRC
+        Sequencing
+        Health Metrics
+    Drone
+      Frame
+      Motors
+      ESCs
+      Power Distribution
+      PID Tuning
+    RL
+      Dev Board Sensors
+      Simulation
+      Training
+      On-Hardware Inference
 ```
 
 ---
